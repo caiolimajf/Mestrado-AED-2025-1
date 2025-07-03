@@ -1,5 +1,5 @@
 // HASHING
-// TAMANHO DA TABELA -> Idealmente não deve ser potencia de 2 e não deve ser primeiro de M(Tamanho da Tabela)
+// TAMANHO DA TABELA -> Idealmente não deve ser potência de 2 e não deve ser primo de M(Tamanho da Tabela)
 
 // Encadeamento Externo
 
@@ -28,7 +28,6 @@ class TabelaHash {
             }
             aux.proximo = novoPonteiro;
         }
-
     }
 
     // Buscar Valor
@@ -69,11 +68,6 @@ class TabelaHash {
                 let anterior = atual;
                 let aux = atual.proximo;
                 while (aux) {
-
-                    if (atual.valor == valor) {
-                        this.tabela[index] = atual.proximo;
-                        return "Removido com sucesso.";
-                    }
 
                     if (aux.valor == valor) {
                         anterior.proximo = aux.proximo;
@@ -129,9 +123,7 @@ tabela.inserir(40);
 
 
 //console.log("BUSCANDO: 40 -> " + tabela.buscar(40));
-
-console.log(tabela.remover(40));
-
+//console.log(tabela.remover(30));
 //console.log("BUSCANDO: 40 -> " + tabela.buscar(40));
 
 
