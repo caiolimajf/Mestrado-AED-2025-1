@@ -8,7 +8,6 @@ Instituição: UFJF - Mestrado em Ciência da Computação
 
     Caio A'Lima
 
-
 📌 Conteúdo
 
- Linguagem: JAVASCRIPT
+    Linguagem: JAVASCRIPT

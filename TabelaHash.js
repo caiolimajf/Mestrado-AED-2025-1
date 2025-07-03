@@ -1,5 +1,5 @@
 // HASHING
-// TAMANHO DA TABELA -> Idealmente não deve ser potência de 2 e não deve ser primo de M(Tamanho da Tabela)
+// TAMANHO DA TABELA -> Idealmente não deve ser potencia de 2 e não deve ser primo de M(Tamanho da Tabela)
 
 // Encadeamento Externo
 
@@ -65,6 +65,11 @@ class TabelaHash {
                 this.tabela[index] = null;
                 return "Removido com sucesso.";
             } else {
+
+                if (atual.valor == valor) {
+                    this.tabela[index] = atual.proximo;
+                    return "Removido com sucesso.";
+                }
                 let anterior = atual;
                 let aux = atual.proximo;
                 while (aux) {
@@ -85,12 +90,12 @@ class TabelaHash {
 
     }
 
-    imprimir(){
+    imprimir() {
         console.log(" ***************************************** ");
-        this.tabela.forEach((lista,i) => {
+        this.tabela.forEach((lista, i) => {
             let linha = `INDICE ${i}: `;
             let atual = lista;
-            while(atual){
+            while (atual) {
                 linha += `(${atual.valor}) ▻ `;
                 atual = atual.proximo;
             }
@@ -123,7 +128,7 @@ tabela.inserir(40);
 
 
 //console.log("BUSCANDO: 40 -> " + tabela.buscar(40));
-//console.log(tabela.remover(30));
+//console.log(tabela.remover(40));
 //console.log("BUSCANDO: 40 -> " + tabela.buscar(40));
 
 
