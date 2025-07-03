@@ -1,4 +1,4 @@
- Implementação Hash
+ Implementação Hashing
 
 Disciplina: AED
 Professor: Jairo
